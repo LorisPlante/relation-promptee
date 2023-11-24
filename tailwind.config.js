@@ -4,11 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        body: "#FFFBEE",
         noir: "#080808",
-        bleu: "#2656EA",
-        orange: "#FFC634",
-        ocre: "#FFEDB5",
-        beige: "#FFFBEE",
+        violet: "#6652DF",
+        lilas: "#C8BFFF",
+        vert: "#CFF500",
+        beige: "#FFFCFC",
       },
       fontFamily: {
         champ: ["Champ"],
@@ -17,7 +18,7 @@ module.exports = {
         "smiling-eyes": "url('../medias/img/smiling_eyes.png')",
       },
       padding: {
-        "section-padding": "50px 120px",
+        section: "50px 128px",
       },
     },
   },

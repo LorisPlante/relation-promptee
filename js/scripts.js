@@ -29,7 +29,7 @@ function sendMessage() {
 function appendMessage(sender, message) {
   const messageElement = document.createElement("div");
   messageElement.classList.add(sender === "user" ? "user-message" : "bot-message");
-  messageElement.classList.add("p-2", "bg-orange", "text-white", "rounded-md", "w-10/12", "ml-auto", "mr-0", "my-2");
+  messageElement.classList.add("p-2", "bg-violet", "text-white", "rounded-md", "w-10/12", "ml-auto", "mr-0", "my-2");
 
   messageElement.textContent = message;
   chatBox.appendChild(messageElement);
