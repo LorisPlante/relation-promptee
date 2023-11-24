@@ -1,0 +1,95 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <title>Gaïa</title>
+  </head>
+  <body class="p-0 m-0 box-border bg-beige overflow-x-hidden">
+    <header id="header" class="w-full h-[100px] bg-gray-400 fixed z-50 top-0 left-0 p-4 transition-all duration-300">
+      <ul class="w-full h-full grid grid-cols-4 grid-rows-1 text-white">
+        <li>
+          <h1 title="Gaïa"><img src="medias/img/LOGO_GAIA_x1.png" alt="Logo Gaïa" class="w-20" /></h1>
+        </li>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </header>
+
+    <main class="p-4 mt-[135px] grid grid-cols-1 grid-rows-1">
+      <section class="p-section-padding">
+        <div id="video" class="w-ful aspect-video bg-gray-400 rounded-[50px] m-auto"></div>
+      </section>
+      <section class="p-section-padding grid grid-rows-3n gap-6 my-5">
+        <p class="w-fit h-fit bg-ocre py-1 px-3 rounded-full self-end">Trouver une phrase d’accroche ici</p>
+        <h2>“Relation promptée”</h2>
+        <p>
+          L’IA ne peut pas ressentir d’émotions. Elle est conçue pour traiter des données et effectuer des tâches spécifiques, mais elle n’a pas la
+          capacité de ressentir des émotions comme les humains. C’est pourquoi il est important de comprendre ses limites et de l’utiliser de manière
+          responsable.
+        </p>
+      </section>
+      <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="relative z-4 bg-ocre rounded-2xl p-8">
+          <p class="font-champ text-[110px]">88%</p>
+          <p>des discussions sur des sites commerciaux sont dirigées par des chatbots.</p>
+          <a href="#" class="block w-fit px-3 py-1 my-4 border-2 border-black rounded-full">Lien vers la source</a>
+        </div>
+        <div class="relative z-4 bg-ocre rounded-2xl p-8">
+          <p class="font-champ text-[110px]">2M</p>
+          <p>d’utilisateurs ont engagé une discussion amicale avec des IA.</p>
+          <a href="#" class="block w-fit px-3 py-1 my-4 border-2 border-black rounded-full">Lien vers la source</a>
+        </div>
+        <div
+          class="relative z-4 bg-ocre rounded-2xl p-8 before:content-[url(../medias/img/smiling_eyes.png)] before:absolute before:top-[-60px] before:right-1 before:w-fit">
+          <p class="font-champ text-[110px]">77%</p>
+          <p>L'IA est utilisée dans 77% des objets que nous utilisons quotidiennement.</p>
+          <a href="#" class="block w-fit px-3 py-1 my-4 border-2 border-black rounded-full">Lien vers la source</a>
+        </div>
+      </section>
+      <section class="p-section-padding">
+        <h3>QU’EST-CE QU’UNE IA ?</h3>
+        <p>
+          L'IA est l'une des avancées technologiques les plus passionnantes de notre époque, mais elle n'est pas sans limites ! Dans ce guide simple
+          et accessible, nous allons vous expliquer ce qu'est l'IA, ses incroyables capacités, ainsi que les défis qui se posent.
+        </p>
+      </section>
+      <section class="grid grid-cols-1 grid-rows-1">
+        <div class="relative w-96 h-96 m-auto bg-gray-700">
+          <div id="parent" class="absolute top-0 left-0 bg-red-600 bg-[url('../medias/img/eye_back.svg')] bg-cover w-[100px] h-20"></div>
+          <div id="" class="absolute top-2 left-4 bg-[url('../medias/img/eye_front.svg')] bg-cover w-12 h-12"></div>
+          <div id="parent" class="absolute -top-6 left-28 bg-red-600 bg-[url('../medias/img/eye_back.svg')] bg-cover w-[100px] h-20"></div>
+          <div id="" class="absolute -top-4 left-32 bg-[url('../medias/img/eye_front.svg')] bg-cover w-12 h-12"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="w-full h-28"></footer>
+
+    <!------------ chatbot ------------>
+    <div
+      class="w-11 h-11 rounded-full bg-bleu border-orange border-2 fixed bottom-2 right-2 px-4 py-2 leading-none cursor-pointer"
+      id="chatBotButton"
+      onclick="openChatBot()">
+      <p class="block w-fit m-auto text-white">x</p>
+    </div>
+    <div
+      class="max-w-md w-[400px] my-5 mx-auto rounded-3xl overflow-hidden fixed bottom-9 right-[-500px] border-2 border-orange border-solid bg-white p-0 transition-all duration-500 ease-in"
+      id="chatContainer">
+      <div class="bg-orange text-bleu p-2 text-center relative rounded-b-none-full">
+        <p>ChatBot</p>
+        <div class="absolute top-1 right-4 cursor-pointer" onclick="closeChatBot()">x</div>
+      </div>
+      <div class="max-h-80 min-h-[100px] overflow-y-auto p-3 my-1" id="chatBox"></div>
+      <div class="grid grid-cols-3 place-items-stretch p-3">
+        <input type="text" id="userInput" placeholder="Écrire à Boty" class="border-solid border-2 rounded-full px-4 py-2 item col-span-2 w-full" />
+        <button onclick="sendMessage()" class="bg-orange text-bleu rounded-full px-3 py-1 cursor-pointer ml-3 col-span-1">Envoyer</button>
+      </div>
+    </div>
+    <!------------ chatbot ------------>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
