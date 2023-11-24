@@ -2,6 +2,13 @@ const chatBot = document.getElementById("chatContainer");
 const chatBox = document.getElementById("chatBox");
 const userInput = document.getElementById("userInput");
 
+let prevScrollPos = window.scrollY || document.documentElement.scrollTop;
+
+const parent = document.getElementById("parent");
+const follower = document.getElementById("follower");
+
+// ---------- ChatBot ----------
+
 function openChatBot() {
   chatBot.classList.toggle("right-2");
   chatBot.classList.toggle("right-[-500px]");
@@ -52,8 +59,6 @@ function getBotResponse(userMessage) {
 
 // ---------- scroll down header ----------
 
-let prevScrollPos = window.scrollY || document.documentElement.scrollTop;
-
 window.onscroll = function () {
   const currentScrollPos = window.scrollY || document.documentElement.scrollTop;
 
@@ -67,9 +72,6 @@ window.onscroll = function () {
 };
 
 // ---------- eyes follows mouse ----------
-
-const parent = document.getElementById("parent");
-const follower = document.getElementById("follower");
 
 document.addEventListener("mousemove", (e) => {
   const rect = parent.getBoundingClientRect();
