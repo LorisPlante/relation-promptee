@@ -960,8 +960,8 @@ video {
 .text-center {
   text-align: center;
 }
-.font-champ {
-  font-family: Champ;
+.font-roc-grotesk-heavy {
+  font-family: roc-grotesk, sans-serif;
 }
 .text-\[110px\] {
   font-size: 110px;
@@ -980,6 +980,9 @@ video {
 }
 .font-bold {
   font-weight: 700;
+}
+.font-extrabold {
+  font-weight: 800;
 }
 .leading-none {
   line-height: 1;
@@ -1017,30 +1020,32 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
-@font-face {
-  font-family: "Champ";
-  src: url("../fonts/Champ-Black.ttf");
-}
-* {
-  font-family: "Space Grotesk", sans-serif;
-}
+@import url("https://use.typekit.net/pvi0sbw.css");
 h1 {
   font-size: 75px;
-  font-family: roc-grotesk, sans-serif;
+  font-family: "roc-grotesk", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 h2 {
   font-size: 60px;
-  font-family: roc-grotesk, sans-serif;
+  font-family: "roc-grotesk", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 h3 {
   font-size: 42px;
-  font-family: roc-grotesk, sans-serif;
+  font-family: "roc-grotesk", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 p {
   font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
 }
 a {
   font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
 }
 main {
   width: calc(100% - 256px);

@@ -12,7 +12,7 @@ module.exports = {
         beige: "#FFFCFC",
       },
       fontFamily: {
-        champ: ["Champ"],
+        "roc-grotesk-heavy": ["roc-grotesk", "sans-serif"],
       },
       content: {
         "smiling-eyes": "url('../medias/img/smiling_eyes.png')",

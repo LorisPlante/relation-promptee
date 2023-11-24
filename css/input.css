@@ -2,30 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
-@font-face {
-  font-family: "Champ";
-  src: url("../fonts/Champ-Black.ttf");
-}
-* {
-  font-family: "Space Grotesk", sans-serif;
-}
+@import url("https://use.typekit.net/pvi0sbw.css");
 h1 {
   font-size: 75px;
-  font-family: roc-grotesk, sans-serif;
+  font-family: "roc-grotesk", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 h2 {
   font-size: 60px;
-  font-family: roc-grotesk, sans-serif;
+  font-family: "roc-grotesk", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 h3 {
   font-size: 42px;
-  font-family: roc-grotesk, sans-serif;
+  font-family: "roc-grotesk", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 p {
   font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
 }
 a {
   font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
 }
 main {
   width: calc(100% - 256px);
