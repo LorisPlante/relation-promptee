@@ -18,7 +18,14 @@ module.exports = {
         "smiling-eyes": "url('../medias/img/smiling_eyes.png')",
       },
       padding: {
-        section: "50px 128px",
+        desktop: "50px 128px",
+        mobile: "25px 5vw",
+      },
+      boxShadow: {
+        btn: "2px 2px 0px 2px #080808",
+      },
+      translate: {
+        btn: "3px",
       },
     },
   },

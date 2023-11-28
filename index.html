@@ -7,22 +7,58 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/pvi0sbw.css" />
     <link rel="stylesheet" href="dist/output.css" />
-    <title>Gaïa</title>
+    <script src="https://kit.fontawesome.com/d9b36bcd78.js" crossorigin="anonymous"></script>
+    <title>Relation promptée</title>
   </head>
-  <body class="p-0 m-0 box-border bg-body overflow-x-hidden">
-    <header id="header" class="w-full h-[80px] bg-lilas fixed z-50 top-0 left-0 p-4 transition-all duration-500 ease-in-out">
-      <ul class="w-full h-full grid grid-cols-4 grid-rows-1 text-violet font-bold">
-        <li>
-          <a href="/"><img src="medias/img/LOGO_GAIA_x1.png" alt="Logo Relation promptée" class="w-20" /></a>
+  <body class="p-0 m-0 box-border bg-beige overflow-x-hidden">
+    <header
+      id="header"
+      class="w-full h-[110px] grid grid-cols-12 gap-6 px-[128px] bg-beige fixed z-50 top-0 left-0 border-b-2 border-solid border-noir transition-all duration-500 ease-in-out">
+      <a href="/" class="col-span-2 col-start-1 block my-auto"
+        ><img src="medias/img/logo.png" alt="logo Relation promptée" />
+        <h1 class="hidden">Relation promptée</h1></a
+      >
+      <ul class="h-fit col-start-6 col-span-7 text-noir block my-auto">
+        <li class="inline mr-12">
+          <a href="/" class="py-[10px] px-5 rounded-full text-white bg-noir">Accueil</a>
         </li>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li class="inline mr-12">
+          <a href="/blog" class="py-[10px] px-5 rounded-full transition duration-300 hover:text-white hover:bg-noir">Blog</a>
+        </li>
+        <li class="inline mr-12">
+          <a href="/temoignages" class="py-[10px] px-5 rounded-full transition duration-300 hover:text-white hover:bg-noir">Témoignages</a>
+        </li>
+        <li class="inline">
+          <a href="/nous-contacter" class="py-[10px] px-5 rounded-full transition duration-300 hover:text-white hover:bg-noir">Nous contacter</a>
+        </li>
       </ul>
     </header>
 
-    <main class="mt-[100px] w-full">
-      <section class="w-full p-section grid grid-cols-12 gap-6">
+    <main class="pt-[110px] w-full text-beige bg-violet">
+      <section class="w-full p-mobile lg:p-desktop grid grid-cols-12 gap-6 bg-violet">
+        <div class="col-span-12 col-start-1 py-[175px] lg:col-span-7">
+          <h2>Le dispositif qui revalorise les relations humaines</h2>
+          <p class="my-10">
+            La seule différence entre l’Homme et l’Intelligence Artificielle c’est l’âme. Certains individus tissent des liens émotionnels avec leurs
+            IA qui ne différencient plus l’outil de l’Homme.
+            <br /><br />
+            Besoin de parler ? Notre numéro vous offre une écoute bienveillante.
+          </p>
+          <a href="tel:0805776677">
+            <p
+              class="w-fit py-4 px-7 bg-vert text-noir font-bold rounded-full ring-noir ring-solid ring-1 shadow-btn transform hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none">
+              0805 776 677
+            </p>
+          </a>
+        </div>
+      </section>
+      <section class="w-full p-mobile lg:p-desktop grid grid-cols-12 gap-6 bg-beige text-noir">
+        <h3 class="col-span-12 lg:col-span-10 lg:col-start-2 col-start-1">
+          Que se passerait-il si un Homme consulterait une thérapeute pour un couple pas comme les autres...
+        </h3>
+        <div class="col-span-12 lg:col-span-10 lg:col-start-2 bg-gray-400 aspect-video rounded-3xl"></div>
+      </section>
+      <!-- <section class="w-full p-section grid grid-cols-12 gap-6">
         <h1 class="col-span-12 text-violet">Relation promptée</h1>
         <p class="col-span-8">
           l’IA ne peut pas ressentir d’émotions. Elle est conçue pour traiter des données et effectuer des tâches spécifiques, mais elle n’a pas la
@@ -210,7 +246,8 @@
           <h3 class="block w-fit rounded-full bg-beige text-violet px-7 py-2 mx-auto mb-4">E-Book</h3>
           <a href="#" class="bg-vert text-[22px] font-bold w-fit px-7 py-2 rounded-full block mx-auto">En savoir plus</a>
         </div>
-      </section>
+      </section> -->
+
       <!-- <section class="grid grid-rows-3n gap-6 my-5">
         <p class="w-fit h-fit bg-ocre py-1 px-3 rounded-full self-end">Trouver une phrase d’accroche ici</p>
         <h2>“Relation promptée”</h2>
@@ -254,7 +291,60 @@
         </div>
       </section> -->
     </main>
-    <footer class="w-full h-28"></footer>
+    <footer class="w-full h-fit bg-noir grid grid-cols-12 gap-6 text-beige p-mobile lg:p-desktop">
+      <h2 class="col-span-12">“Relation promptée”</h2>
+      <div class="col-span-12 lg:col-span-2 col-start-1 lg:col-start-1 sm:col-span-6 sm:col-start-1">
+        <p class="font-bold text-2xl my-[10px]">Pages</p>
+        <ul>
+          <li class="py-[10px]"><a href="/">Accueil</a></li>
+          <li class="py-[10px]"><a href="/blog">Blog</a></li>
+          <li class="py-[10px]"><a href="/temoignages">Témoignages</a></li>
+          <li class="py-[10px]"><a href="/nous-contacter">Nous contacter</a></li>
+        </ul>
+      </div>
+      <div class="col-span-12 lg:col-span-2 col-start-1 lg:col-start-3 sm:col-span-6 sm:col-start-7">
+        <p class="font-bold text-2xl my-[10px]">Légal</p>
+        <ul>
+          <li class="py-[10px]">Mentions légales</li>
+          <li class="py-[10px]">Politique de confidentialité</li>
+          <li class="py-[10px]">Accessibilité</li>
+        </ul>
+      </div>
+      <div class="col-span-12 lg:col-span-2 col-start-1 lg:col-start-5 sm:col-span-6 sm:col-start-1">
+        <p class="font-bold text-2xl my-[10px]">Nous contacter</p>
+        <ul>
+          <li class="py-[10px]"><a href="tel:0805776677" class="text-2xl">0805 776 677</a></li>
+          <li class="py-[10px]">8 bis Rue de la Fontaine au Roi, 75011 Paris</li>
+          <li class="py-[10px]"></li>
+        </ul>
+      </div>
+      <div class="col-span-12 lg:col-span-4 col-start-1 lg:col-start-8 sm:col-span-6 sm:col-start-7">
+        <p class="font-bold text-2xl my-[10px]">Inscrivez vous à notre Newsletter !</p>
+        <form action="#" method="POST" id="formNewsletter" class="relative w-full">
+          <input type="text" class="w-full my-[10px] py-[10px] px-6 rounded-full" placeholder="Entrez votre e-mail" />
+          <a onclick="document.getElementById('doc_form').submit();" class="absolute top-[10px] right-4 p-[10px] cursor-pointer"
+            ><i class="fa-solid fa-angle-right text-noir"></i
+          ></a>
+        </form>
+        <ul class="w-full grid grid-cols-5 my-[10px]">
+          <li class="inline-block w-11 h-11 p-2 bg-beige rounded-full">
+            <a href=""><i class="fa-brands fa-instagram text-3xl text-noir"></i></a>
+          </li>
+          <li class="inline-block w-11 h-11 p-2 bg-beige rounded-full">
+            <a href=""><i class="fa-brands fa-linkedin text-3xl text-noir"></i></a>
+          </li>
+          <li class="inline-block w-11 h-11 p-2 bg-beige rounded-full">
+            <a href=""><i class="fa-brands fa-facebook text-3xl text-noir"></i></a>
+          </li>
+          <li class="inline-block w-11 h-11 p-2 bg-beige rounded-full">
+            <a href=""><i class="fa-brands fa-x-twitter text-3xl text-noir"></i></a>
+          </li>
+          <li class="inline-block w-11 h-11 p-2 bg-beige rounded-full">
+            <a href=""><i class="fa-brands fa-spotify text-3xl text-noir"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <!------------ chatbot ------------>
     <div
