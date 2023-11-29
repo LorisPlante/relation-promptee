@@ -74,7 +74,7 @@
     </header>
 
     <main class="pt-[50px] lg:pt-[110px] w-full text-beige bg-violet">
-      <section class="w-full p-mobile lg:p-desktop grid grid-cols-12 gap-6 bg-violet">
+      <section class="w-full h-[calc(100vh-110px)] p-mobile lg:p-desktop grid grid-cols-12 gap-6 bg-violet">
         <div class="col-span-12 col-start-1 py-11 lg:py-[175px] lg:col-span-7">
           <h2>Le dispositif qui revalorise les relations humaines</h2>
           <p class="my-10">
@@ -294,7 +294,7 @@
           <i class="fa-solid fa-angle-right inline-block text-noir mx-1 my-2"></i>
         </div>
       </section>
-      <section class="w-full h-fit bg-violet">
+      <section class="w-full h-min bg-violet">
         <div class="w-full lg:w-3/5 float-left p-mobile lg:p-desktop bg-noir text-beige">
           <h3 class="mb-8 mt-11">Comprendre l'IA & l'empathie en un clin d'œil</h3>
           <p class="mb-8">
@@ -315,7 +315,7 @@
           </a>
         </div>
         <div class="w-full float-left lg:w-2/5 bg-violet">
-          <img src="medias/img/hand_phone.png" alt="une main tenant un téléphone" class="w-3/4 lg:w-full block mx-auto" />
+          <img src="medias/img/hand_phone.png" alt="une main tenant un téléphone" class="h-3/5 lg:w-full block mx-auto" />
         </div>
         <p class="clear-both"></p>
       </section>
@@ -408,7 +408,7 @@
     </main>
 
     <footer class="w-full h-fit bg-noir grid grid-cols-12 gap-6 text-beige p-mobile lg:p-desktop">
-      <h2 class="col-span-12">“Relation promptée”</h2>
+      <img src="medias/img/logo_white.svg" alt="logo blanc Relation promptée" class="col-span-3" />
       <div class="col-span-12 lg:col-span-2 col-start-1 lg:col-start-1 sm:col-span-6 sm:col-start-1">
         <p class="font-bold text-2xl my-3">Pages</p>
         <ul>
@@ -430,7 +430,7 @@
         <p class="font-bold text-2xl my-3">Nous contacter</p>
         <ul>
           <li class="py-3"><a href="tel:0805776677" class="text-2xl">0805 776 677</a></li>
-          <li class="py-3">8 bis Rue de la Fontaine au Roi, 75011 Paris</li>
+          <li class="py-3"><a href="">8 bis Rue de la Fontaine au Roi, 75011 Paris</a></li>
           <li class="py-3"></li>
         </ul>
       </div>
@@ -461,27 +461,6 @@
         </ul>
       </div>
     </footer>
-
-    <!------------ chatbot ------------>
-    <div
-      class="w-11 h-11 rounded-full bg-lilas border-violet border-2 fixed bottom-2 right-2 px-4 py-2 leading-none cursor-pointer"
-      id="chatBotButton"
-      onclick="openChatBot()">
-      <p class="block w-fit m-auto text-violet">x</p>
-    </div>
-    <div
-      class="max-w-md w-[400px] my-5 mx-auto rounded-3xl overflow-hidden fixed bottom-9 right-[-500px] border-2 border-lilas border-solid bg-white p-0 transition-all duration-500 ease-in"
-      id="chatContainer">
-      <div class="bg-lilas text-violet p-2 text-center relative rounded-b-none-full">
-        <p>ChatBot</p>
-        <div class="absolute top-1 right-4 cursor-pointer" onclick="closeChatBot()">x</div>
-      </div>
-      <div class="max-h-80 min-h-[100px] overflow-y-auto p-3 my-1" id="chatBox"></div>
-      <div class="grid grid-cols-3 place-items-stretch p-3">
-        <input type="text" id="userInput" placeholder="Écrire à Boty" class="border-solid border-2 rounded-full px-4 py-2 item col-span-2 w-full" />
-        <button onclick="sendMessage()" class="bg-lilas text-violet rounded-full px-3 py-1 cursor-pointer ml-3 col-span-1">Envoyer</button>
-      </div>
-    </div>
 
     <script src="js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
