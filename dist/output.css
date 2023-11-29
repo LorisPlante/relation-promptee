@@ -627,8 +627,8 @@ video {
 .mb-11 {
   margin-bottom: 2.75rem;
 }
-.mb-12 {
-  margin-bottom: 3rem;
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 .mb-8 {
   margin-bottom: 2rem;
@@ -1039,9 +1039,6 @@ video {
 }
 .duration-500 {
   transition-duration: 500ms;
-}
-.duration-700 {
-  transition-duration: 700ms;
 }
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);

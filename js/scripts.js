@@ -73,15 +73,28 @@ window.onscroll = function () {
 
 // ---------- click burger header mobile ----------
 
+burger = document.getElementById("burger");
+burgerClose = document.getElementById("burgerClose");
+ulMenuMobile = document.getElementById("ulMenuMobile");
+
 burger.addEventListener("click", () => {
-  document.getElementById("ulMenuMobile").classList.toggle("top-[50px]");
-  document.getElementById("ulMenuMobile").classList.toggle("top-[-100%]");
+  ulMenuMobile.classList.toggle("top-[50px]");
+  ulMenuMobile.classList.toggle("top-[-100%]");
 
-  document.getElementById("iconBurger").classList.toggle("hidden");
-  document.getElementById("iconBurger").classList.toggle("block");
+  burger.classList.toggle("hidden");
+  burger.classList.toggle("block");
+  burgerClose.classList.toggle("hidden");
+  burgerClose.classList.toggle("block");
+});
 
-  document.getElementById("iconBurgerClose").classList.toggle("hidden");
-  document.getElementById("iconBurgerClose").classList.toggle("block");
+burgerClose.addEventListener("click", () => {
+  ulMenuMobile.classList.toggle("top-[50px]");
+  ulMenuMobile.classList.toggle("top-[-100%]");
+
+  burger.classList.toggle("hidden");
+  burger.classList.toggle("block");
+  burgerClose.classList.toggle("hidden");
+  burgerClose.classList.toggle("block");
 });
 
 // ---------- eyes follows mouse ----------
