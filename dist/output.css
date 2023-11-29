@@ -548,11 +548,11 @@ video {
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
 .col-span-4 {
   grid-column: span 4 / span 4;
+}
+.col-span-6 {
+  grid-column: span 6 / span 6;
 }
 .col-span-7 {
   grid-column: span 7 / span 7;
@@ -658,6 +658,10 @@ video {
 .aspect-video {
   aspect-ratio: 16 / 9;
 }
+.\!h-max {
+  height: -moz-max-content !important;
+  height: max-content !important;
+}
 .h-11 {
   height: 2.75rem;
 }
@@ -676,9 +680,6 @@ video {
 .h-\[50px\] {
   height: 50px;
 }
-.h-\[calc\(100vh-110px\)\] {
-  height: calc(100vh - 110px);
-}
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -689,6 +690,9 @@ video {
 .h-min {
   height: -moz-min-content;
   height: min-content;
+}
+.\!min-h-\[calc\(100vh-110px\)\] {
+  min-height: calc(100vh - 110px) !important;
 }
 .w-11 {
   width: 2.75rem;
@@ -870,6 +874,18 @@ video {
 .pt-\[50px\] {
   padding-top: 50px;
 }
+.font-h2 {
+  font-family: roc-grotesk, sans-serif;
+}
+.font-h3 {
+  font-family: roc-grotesk, sans-serif;
+}
+.font-link {
+  font-family: Space Grotesk, sans-serif;
+}
+.font-para {
+  font-family: Space Grotesk, sans-serif;
+}
 .font-roc-grotesk-heavy {
   font-family: roc-grotesk, sans-serif;
 }
@@ -884,9 +900,21 @@ video {
 .text-\[7vw\] {
   font-size: 7vw;
 }
+.text-h2mobile {
+  font-size: 35px;
+}
+.text-h3mobile {
+  font-size: 24px;
+}
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+.text-link {
+  font-size: 18px;
+}
+.text-para {
+  font-size: 18px;
 }
 .text-sm {
   font-size: 0.875rem;
@@ -901,6 +929,18 @@ video {
 }
 .font-bold {
   font-weight: 700;
+}
+.font-h2 {
+  font-weight: 700;
+}
+.font-h3 {
+  font-weight: 700;
+}
+.leading-h2 {
+  line-height: 1;
+}
+.leading-para {
+  line-height: 1.5rem;
 }
 .text-beige {
   --tw-text-opacity: 1;
@@ -971,37 +1011,7 @@ video {
 }
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 @import url("https://use.typekit.net/pvi0sbw.css");
-h1 {
-  font-size: 75px;
-  font-family: "roc-grotesk", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-h2 {
-  font-size: 50px;
-  font-family: "roc-grotesk", sans-serif;
-  font-weight: bolder;
-  font-style: normal;
-  line-height: 1;
-}
-h3 {
-  font-size: 28px;
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 700;
-}
-p {
-  font-size: 18px;
-  font-family: "Space Grotesk", sans-serif;
-  line-height: 1.5rem;
-}
-a {
-  font-size: 18px;
-  font-family: "Space Grotesk", sans-serif;
-}
-main {
-  width: calc(100% - 256px);
-}
-#chatBox::-webkit-scrollbar {
+/* #chatBox::-webkit-scrollbar {
   width: 8px;
 }
 #chatBox::-webkit-scrollbar-thumb {
@@ -1015,6 +1025,19 @@ main {
 #chatBox::-webkit-scrollbar-track {
   background-color: #e8e8e8;
   border-radius: 9999px;
+} */
+.after\:\!fill-beige::after {
+  content: var(--tw-content);
+  fill: #FFFCFC !important;
+}
+.after\:\!stroke-beige::after {
+  content: var(--tw-content);
+  stroke: #FFFCFC !important;
+}
+.after\:\!text-beige::after {
+  content: var(--tw-content);
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 252 252 / var(--tw-text-opacity)) !important;
 }
 .hover\:translate-x-\[2px\]:hover {
   --tw-translate-x: 2px;
@@ -1041,6 +1064,10 @@ main {
 
   .sm\:col-span-10 {
     grid-column: span 10 / span 10;
+  }
+
+  .sm\:col-span-3 {
+    grid-column: span 3 / span 3;
   }
 
   .sm\:col-span-6 {
@@ -1133,6 +1160,14 @@ main {
   .lg\:pt-\[110px\] {
     padding-top: 110px;
   }
+
+  .lg\:text-h2desktop {
+    font-size: 50px;
+  }
+
+  .lg\:text-h3desktop {
+    font-size: 28px;
+  }
 }
 @media (min-width: 1280px) {
 
@@ -1146,6 +1181,10 @@ main {
 
   .xl\:col-start-9 {
     grid-column-start: 9;
+  }
+
+  .xl\:\!hidden {
+    display: none !important;
   }
 }
 @media (min-width: 1536px) {

@@ -11,9 +11,6 @@ module.exports = {
         vert: "#CFF500",
         beige: "#FFFCFC",
       },
-      fontFamily: {
-        "roc-grotesk-heavy": ["roc-grotesk", "sans-serif"],
-      },
       content: {
         "smiling-eyes": "url('../medias/img/smiling_eyes.png')",
       },
@@ -27,6 +24,29 @@ module.exports = {
       },
       translate: {
         btn: "3px",
+      },
+      fontSize: {
+        h2desktop: "50px",
+        h2mobile: "35px",
+        h3desktop: "28px",
+        h3mobile: "24px",
+        para: "18px",
+        link: "18px",
+      },
+      fontFamily: {
+        h2: "roc-grotesk, sans-serif",
+        h3: "roc-grotesk, sans-serif",
+        para: "Space Grotesk, sans-serif",
+        link: "Space Grotesk, sans-serif",
+        "roc-grotesk-heavy": ["roc-grotesk", "sans-serif"],
+      },
+      fontWeight: {
+        h2: "700",
+        h3: "700",
+      },
+      lineHeight: {
+        h2: "1",
+        para: "1.5rem",
       },
     },
   },

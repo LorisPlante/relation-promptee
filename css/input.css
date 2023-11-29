@@ -3,37 +3,7 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 @import url("https://use.typekit.net/pvi0sbw.css");
-h1 {
-  font-size: 75px;
-  font-family: "roc-grotesk", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-h2 {
-  font-size: 50px;
-  font-family: "roc-grotesk", sans-serif;
-  font-weight: bolder;
-  font-style: normal;
-  line-height: 1;
-}
-h3 {
-  font-size: 28px;
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 700;
-}
-p {
-  font-size: 18px;
-  font-family: "Space Grotesk", sans-serif;
-  line-height: 1.5rem;
-}
-a {
-  font-size: 18px;
-  font-family: "Space Grotesk", sans-serif;
-}
-main {
-  width: calc(100% - 256px);
-}
-#chatBox::-webkit-scrollbar {
+/* #chatBox::-webkit-scrollbar {
   width: 8px;
 }
 #chatBox::-webkit-scrollbar-thumb {
@@ -47,4 +17,4 @@ main {
 #chatBox::-webkit-scrollbar-track {
   background-color: #e8e8e8;
   border-radius: 9999px;
-}
+} */

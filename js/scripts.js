@@ -43,6 +43,22 @@ burgerClose.addEventListener("click", () => {
   burgerClose.classList.toggle("block");
 });
 
+// ---------- swiper slide height ----------
+
+document.addEventListener("DOMContentLoaded", function () {
+  var zommSurSlide1 = document.getElementById("zommSurSlide1");
+  var zommSurSlide2 = document.getElementById("zommSurSlide2");
+  var zommSurSlide3 = document.getElementById("zommSurSlide3");
+
+  // Trouvez la hauteur maximale
+  var maxHeight = Math.max(zommSurSlide1.clientHeight, zommSurSlide2.clientHeight, zommSurSlide3.clientHeight);
+
+  // Appliquez la hauteur maximale à toutes les divs
+  zommSurSlide1.style.height = maxHeight + "px";
+  zommSurSlide2.style.height = maxHeight + "px";
+  zommSurSlide3.style.height = maxHeight + "px";
+});
+
 // ---------- eyes follows mouse ----------
 
 document.addEventListener("mousemove", (e) => {
