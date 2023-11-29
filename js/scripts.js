@@ -57,19 +57,32 @@ function getBotResponse(userMessage) {
   return "You said: " + userMessage;
 }
 
-// ---------- scroll down header ----------
+// ---------- scroll down header desktop ----------
 
 window.onscroll = function () {
   const currentScrollPos = window.scrollY || document.documentElement.scrollTop;
 
   if (prevScrollPos > currentScrollPos) {
-    document.getElementById("header").style.top = "0";
+    document.getElementById("headerDesktop").style.top = "0";
   } else {
-    document.getElementById("header").style.top = "-110px";
+    document.getElementById("headerDesktop").style.top = "-110px";
   }
 
   prevScrollPos = currentScrollPos;
 };
+
+// ---------- click burger header mobile ----------
+
+burger.addEventListener("click", () => {
+  document.getElementById("ulMenuMobile").classList.toggle("top-[50px]");
+  document.getElementById("ulMenuMobile").classList.toggle("top-[-100%]");
+
+  document.getElementById("iconBurger").classList.toggle("hidden");
+  document.getElementById("iconBurger").classList.toggle("block");
+
+  document.getElementById("iconBurgerClose").classList.toggle("hidden");
+  document.getElementById("iconBurgerClose").classList.toggle("block");
+});
 
 // ---------- eyes follows mouse ----------
 
