@@ -560,6 +560,9 @@ video {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
+.col-span-5 {
+  grid-column: span 5 / span 5;
+}
 .col-span-6 {
   grid-column: span 6 / span 6;
 }
@@ -575,11 +578,17 @@ video {
 .col-start-1 {
   grid-column-start: 1;
 }
+.col-start-2 {
+  grid-column-start: 2;
+}
 .col-start-5 {
   grid-column-start: 5;
 }
 .col-start-6 {
   grid-column-start: 6;
+}
+.col-start-7 {
+  grid-column-start: 7;
 }
 .col-start-9 {
   grid-column-start: 9;
@@ -634,13 +643,13 @@ video {
   margin-left: 5rem;
   margin-right: 5rem;
 }
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+}
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 .mx-auto {
   margin-left: auto;
@@ -650,9 +659,9 @@ video {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
-.my-14 {
-  margin-top: 3.5rem;
-  margin-bottom: 3.5rem;
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 .my-2 {
   margin-top: 0.5rem;
@@ -688,6 +697,9 @@ video {
 .ml-5 {
   margin-left: 1.25rem;
 }
+.ml-6 {
+  margin-left: 1.5rem;
+}
 .mr-12 {
   margin-right: 3rem;
 }
@@ -711,6 +723,9 @@ video {
 }
 .mt-5 {
   margin-top: 1.25rem;
+}
+.mt-6 {
+  margin-top: 1.5rem;
 }
 .mt-8 {
   margin-top: 2rem;
@@ -792,14 +807,14 @@ video {
 .w-24 {
   width: 6rem;
 }
+.w-3\/4 {
+  width: 75%;
+}
 .w-3\/5 {
   width: 60%;
 }
 .w-6 {
   width: 1.5rem;
-}
-.w-9 {
-  width: 2.25rem;
 }
 .w-\[10px\] {
   width: 10px;
@@ -835,9 +850,6 @@ video {
 }
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-.grid-cols-8 {
-  grid-template-columns: repeat(8, minmax(0, 1fr));
 }
 .grid-rows-3 {
   grid-template-rows: repeat(3, minmax(0, 1fr));
@@ -1298,12 +1310,20 @@ video {
     grid-column-start: 9;
   }
 
+  .lg\:\!block {
+    display: block !important;
+  }
+
   .lg\:inline-block {
     display: inline-block;
   }
 
   .lg\:grid {
     display: grid;
+  }
+
+  .lg\:\!hidden {
+    display: none !important;
   }
 
   .lg\:hidden {
@@ -1359,16 +1379,8 @@ video {
 }
 @media (min-width: 1536px) {
 
-  .\32xl\:\!block {
-    display: block !important;
-  }
-
   .\32xl\:grid {
     display: grid;
-  }
-
-  .\32xl\:\!hidden {
-    display: none !important;
   }
 
   .\32xl\:hidden {
