@@ -783,6 +783,9 @@ video {
 .\!min-h-\[calc\(100vh-110px\)\] {
   min-height: calc(100vh - 110px) !important;
 }
+.min-h-full {
+  min-height: 100%;
+}
 .w-11 {
   width: 2.75rem;
 }
@@ -930,7 +933,7 @@ video {
   padding: 10px;
 }
 .p-mobile {
-  padding: 25px 5vw;
+  padding: 35px 5vw;
 }
 .px-10 {
   padding-left: 2.5rem;
@@ -1002,16 +1005,19 @@ video {
   font-family: roc-grotesk, sans-serif;
 }
 .font-h4 {
-  font-family: Space Grotesk, sans-serif;
+  font-family: space-grotesk-variable, sans-serif;
 }
 .font-link {
-  font-family: Space Grotesk, sans-serif;
+  font-family: space-grotesk-variable, sans-serif;
 }
 .font-para {
-  font-family: Space Grotesk, sans-serif;
+  font-family: space-grotesk-variable, sans-serif;
 }
 .font-roc-grotesk-heavy {
   font-family: roc-grotesk, sans-serif;
+}
+.font-space-grotesk-variable {
+  font-family: space-grotesk-variable, sans-serif;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -1038,10 +1044,10 @@ video {
   line-height: 1.75rem;
 }
 .text-link {
-  font-size: 18px;
+  font-size: 16px;
 }
 .text-para {
-  font-size: 18px;
+  font-size: 16px;
 }
 .text-sm {
   font-size: 0.875rem;
@@ -1308,12 +1314,16 @@ video {
     width: 40%;
   }
 
+  .lg\:w-3\/4 {
+    width: 75%;
+  }
+
   .lg\:w-3\/5 {
     width: 60%;
   }
 
   .lg\:p-desktop {
-    padding: 50px 128px;
+    padding: 75px 128px;
   }
 
   .lg\:py-\[175px\] {
