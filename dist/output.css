@@ -494,6 +494,9 @@ video {
 .relative {
   position: relative;
 }
+.bottom-6 {
+  bottom: 1.5rem;
+}
 .left-0 {
   left: 0px;
 }
@@ -502,6 +505,12 @@ video {
 }
 .left-5 {
   left: 1.25rem;
+}
+.left-6 {
+  left: 1.5rem;
+}
+.right-0 {
+  right: 0px;
 }
 .right-4 {
   right: 1rem;
@@ -557,6 +566,12 @@ video {
 .col-span-7 {
   grid-column: span 7 / span 7;
 }
+.col-span-8 {
+  grid-column: span 8 / span 8;
+}
+.col-span-9 {
+  grid-column: span 9 / span 9;
+}
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -565,6 +580,39 @@ video {
 }
 .col-start-6 {
   grid-column-start: 6;
+}
+.col-start-9 {
+  grid-column-start: 9;
+}
+.row-span-1 {
+  grid-row: span 1 / span 1;
+}
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
+.row-span-3 {
+  grid-row: span 3 / span 3;
+}
+.row-start-1 {
+  grid-row-start: 1;
+}
+.row-start-2 {
+  grid-row-start: 2;
+}
+.row-start-3 {
+  grid-row-start: 3;
+}
+.row-start-4 {
+  grid-row-start: 4;
+}
+.row-start-5 {
+  grid-row-start: 5;
+}
+.row-start-6 {
+  grid-row-start: 6;
+}
+.row-start-7 {
+  grid-row-start: 7;
 }
 .float-left {
   float: left;
@@ -575,9 +623,16 @@ video {
 .m-0 {
   margin: 0px;
 }
+.m-auto {
+  margin: auto;
+}
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
+}
+.mx-20 {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 .mx-4 {
   margin-left: 1rem;
@@ -618,6 +673,9 @@ video {
 .mb-11 {
   margin-bottom: 2.75rem;
 }
+.mb-20 {
+  margin-bottom: 5rem;
+}
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -638,6 +696,9 @@ video {
 }
 .mt-1 {
   margin-top: 0.25rem;
+}
+.mt-10 {
+  margin-top: 2.5rem;
 }
 .mt-11 {
   margin-top: 2.75rem;
@@ -675,11 +736,17 @@ video {
 .aspect-video {
   aspect-ratio: 16 / 9;
 }
+.h-10 {
+  height: 2.5rem;
+}
 .h-11 {
   height: 2.75rem;
 }
 .h-3\/5 {
   height: 60%;
+}
+.h-6 {
+  height: 1.5rem;
 }
 .h-72 {
   height: 18rem;
@@ -695,6 +762,12 @@ video {
 }
 .h-\[50px\] {
   height: 50px;
+}
+.h-\[80px\] {
+  height: 80px;
+}
+.h-\[calc\(100\%-80px\)\] {
+  height: calc(100% - 80px);
 }
 .h-fit {
   height: -moz-fit-content;
@@ -713,8 +786,17 @@ video {
 .w-11 {
   width: 2.75rem;
 }
+.w-3\/5 {
+  width: 60%;
+}
+.w-6 {
+  width: 1.5rem;
+}
 .w-9 {
   width: 2.25rem;
+}
+.w-\[100px\] {
+  width: 100px;
 }
 .w-\[10px\] {
   width: 10px;
@@ -726,11 +808,18 @@ video {
 .w-full {
   width: 100%;
 }
+.translate-y-\[-40px\] {
+  --tw-translate-y: -40px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.resize-none {
+  resize: none;
 }
 .grid-flow-col {
   grid-auto-flow: column;
@@ -743,6 +832,12 @@ video {
 }
 .grid-cols-8 {
   grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+.grid-rows-6 {
+  grid-template-rows: repeat(6, minmax(0, 1fr));
 }
 .items-center {
   align-items: center;
@@ -877,6 +972,10 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .pb-11 {
   padding-bottom: 2.75rem;
@@ -1146,6 +1245,10 @@ video {
     grid-column: span 4 / span 4;
   }
 
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
   .lg\:col-span-7 {
     grid-column: span 7 / span 7;
   }
@@ -1174,12 +1277,28 @@ video {
     grid-column-start: 5;
   }
 
+  .lg\:col-start-7 {
+    grid-column-start: 7;
+  }
+
   .lg\:col-start-8 {
     grid-column-start: 8;
   }
 
+  .lg\:col-start-9 {
+    grid-column-start: 9;
+  }
+
   .lg\:inline-block {
     display: inline-block;
+  }
+
+  .lg\:grid {
+    display: grid;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:w-2\/5 {
@@ -1190,8 +1309,8 @@ video {
     width: 60%;
   }
 
-  .lg\:w-full {
-    width: 100%;
+  .lg\:w-screen {
+    width: 100vw;
   }
 
   .lg\:p-desktop {

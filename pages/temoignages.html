@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="fr-FR" dir="ltr" class="scroll-smooth">
+<head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.typekit.net/pvi0sbw.css" />
+        <link rel="stylesheet" href="../dist/output.css" />
+        <script src="https://kit.fontawesome.com/d9b36bcd78.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <title>Relation promptée - Témoignages</title>
+      </head>
+      <body class="p-0 m-0 box-border bg-beige overflow-x-hidden">
+        <div id="burger" class="block 2xl:hidden w-11 h-11 px-2 pt-1 fixed top-1 left-1 z-[51] cursor-pointer">
+          <i id="iconBurger" class="fa-solid fa-bars block text-noir text-3xl"></i>
+        </div>
+        <div id="burgerClose" class="hidden w-11 h-11 px-2 pt-1 fixed top-1 left-1 z-[51] cursor-pointer">
+          <i id="iconBurgerClose" class="fa-solid fa-xmark block text-noir text-3xl"></i>
+        </div>
+        <header class="w-full">
+          <div
+            id="headerDesktop"
+            class="w-full h-[110px] hidden 2xl:grid grid-cols-12 gap-6 px-[128px] bg-beige fixed z-50 top-0 left-0 border-b-2 border-solid border-noir transition-all duration-500 ease-in-out">
+            <a href="/relation-promptee/" class="text-link font-link col-span-2 col-start-1 block my-auto"
+              ><img src="../medias/img/logo.png" alt="logo Relation promptée" />
+              <h1 class="hidden">Relation promptée</h1></a
+            >
+            <ul class="h-fit col-start-6 col-span-7 text-noir block my-auto">
+              <li class="inline mr-12">
+                <a href="/relation-promptee/" class="text-link font-link py-2 px-5 rounded-full transition duration-300 hover:text-white hover:bg-noir">Accueil</a>
+              </li>
+              <li class="inline mr-12">
+                <a
+                  href="blog.html"
+                  class="text-link font-link py-2 px-5 rounded-full transition duration-300 hover:text-white hover:bg-noir"
+                  >Blog</a
+                >
+              </li>
+              <li class="inline mr-12">
+                <a
+                  href="temoignages.html"
+                  class="text-link font-link py-2 px-5 rounded-full  text-white bg-noir "
+                  >Témoignages</a
+                >
+              </li>
+              <li class="inline">
+                <a
+                  href="nous-contacter.html"
+                  class="text-link font-link py-2 px-5 rounded-full transition duration-300 hover:text-white hover:bg-noir"
+                  >Nous contacter</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="headerMobile" class="w-full h-[50px] 2xl:hidden bg-beige fixed z-50 top-0 left-0 border-b-2 border-solid border-noir">
+            <a href="/" class="text-link font-link block w-fit h-fit mx-auto my-2">
+              <img src="../medias/img/logo.png" alt="logo Relation promptée" class="w-[100px]" />
+              <h1 class="hidden">Relation promptée</h1>
+            </a>
+          </div>
+          <ul
+            id="ulMenuMobile"
+            class="fixed top-[-100%] left-0 z-40 w-full h-fit p-4 bg-beige text-noir block 2xl:hidden my-auto border-b-2 border-solid border-noir transition-all duration-500 ease-in-out">
+            <li class="mb-5">
+              <a href="/relation-promptee/" class="text-link font-link py-2 px-5 rounded-full transition duration-300 hover:text-white hover:bg-noir">Accueil</a>
+            </li>
+            <li class="mb-5">
+              <a
+                href="blog.html"
+                class="text-link font-link py-2 px-5 rounded-full transition duration-300 hover:text-white hover:bg-noir"
+                >Blog</a
+              >
+            </li>
+            <li class="mb-5">
+              <a
+                href="temoignages.html"
+                class="text-link font-link py-2 px-5 rounded-full  text-white bg-noir "
+                >Témoignages</a
+              >
+            </li>
+            <li>
+              <a
+                href="nous-contacter.html"
+                class="text-link font-link py-2 px-5 rounded-full transition duration-300 hover:text-white hover:bg-noir"
+                >Nous contacter</a
+              >
+            </li>
+          </ul>
+        </header>
+        <main class="pt-[50px] lg:pt-[110px] w-full text-beige bg-violet">
+            <section class="w-full !min-h-[calc(100vh-110px)] p-mobile lg:p-desktop grid grid-cols-12 gap-6 bg-violet">
+                <div class="col-span-12 col-start-1 py-11 lg:py-[175px] lg:col-span-7">
+                  <h2 class="text-h2mobile lg:text-h2desktop font-h2 leading-h2">L'IA en toute transparence : Récits personnels & partage</h2>
+                  <p class="text-para font-para leading-para my-10">
+                    Découvrez des récits captivants où la frontière entre humain et intelligence artificielle s'estompe. Des expériences uniques, entrez dans un univers où la technologie redéfinit nos interactions.
+                  </p>
+                </div>
+              </section>
+              <section class="w-full p-mobile lg:p-desktop grid grid-cols-12 gap-6 bg-beige">
+                <h2
+                  class="text-h2mobile lg:text-h2desktop font-h2 leading-h2 w-fit col-span-12 bg-lilas text-violet px-10 pb-2 pt-3 rounded-lg ring-1 ring-noir">
+                  Témoignages
+                </h2>
+              </section>
+              
+              <section class="w-full p-mobile lg:p-desktop grid grid-cols-12 gap-6 bg-beige text-noir">       
+                <div class="col-span-12 lg:col-span-8 col-start-1 row-start-1 bg-beige aspect-video rounded-3xl ring-1 ring-noir">
+                    <div>
+                        <div class="bg-violet w-full h-9 rounded-t-2xl relative ring-1 ring-noir">
+                            <span class="w-[10px] h-[10px] bg-beige rounded-full absolute top-3 right-[46px] ring-1 ring-noir"></span>
+                            <span class="w-[10px] h-[10px] bg-beige rounded-full absolute top-3 right-[32px] ring-1 ring-noir"></span>
+                            <span class="w-[10px] h-[10px] bg-beige rounded-full absolute top-3 right-[18px] ring-1 ring-noir"></span>
+                          </div> 
+                          <p class="text-para font-para leading-para mx-20 mt-10 text-2xl font-bold">Mark, 45 ans, utilisateur d'assistant vocal intelligent</p>
+                  <p class="text-para font-para leading-para mx-20 mt-10 text-lg">
+                    "Mon travail est très stressant, et j'ai commencé à utiliser un assistant vocal intelligent pour m'aider à gérer mes tâches quotidiennes et
+                    à me rappeler mes rendez-vous. C'était incroyablement pratique et m'a permis de gagner beaucoup de temps. Je me suis habitué à discuter avec lui comme s'il s'agissait d'un véritable assistant.
+                    <br><br><br>
+                    Cependant, j'ai réalisé que je devenais de plus en plus déconnecté de mes collègues et de ma famille en raison de ma dépendance à la technologie.
+                    J'ai décidé de réduire mon utilisation de l'assistant vocal et de passer plus de temps à interagir en personne avec les gens, ce qui a amélioré ma vie sociale et mon bien-être."
+                  </p>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-4 col-start-1 lg:col-start-9 bg-lilas text-noir rounded-2xl ring-1 ring-noir">
+                  <div class="bg-violet w-full h-9 rounded-t-2xl relative ring-1 ring-noir">
+                    <span class="w-[10px] h-[10px] bg-beige rounded-full absolute top-3 right-[46px] ring-1 ring-noir"></span>
+                    <span class="w-[10px] h-[10px] bg-beige rounded-full absolute top-3 right-[32px] ring-1 ring-noir"></span>
+                    <span class="w-[10px] h-[10px] bg-beige rounded-full absolute top-3 right-[18px] ring-1 ring-noir"></span>
+                  </div>
+                  <p class="text-para font-para leading-para mx-20 mt-10 text-2xl font-bold">Leïla, 24 ans, utilisatrice de robots de compagnie</p>
+                  <p class="text-para font-para leading-para mx-20 mt-10 text-lg">
+                    "J'ai acheté un robot de compagnie pour me tenir compagnie lorsque j'étais seule à la maison. Il était mignon et interactif,
+                    mais au fil du temps, j'ai réalisé qu'il n'avait pas de véritables émotions ni d'empathie. Il ne pouvait pas comprendre quand
+                    j'avais besoin de réconfort ou d'une véritable interaction humaine. J'ai finalement adopté un chien, ce qui a apporté une chaleur
+                    et une connexion authentique à ma vie que le robot ne pouvait pas offrir."
+                  </p>
+                </div>
+              </section> 
+
+
+
+              <section class="w-full p-mobile lg:p-desktop grid grid-cols-12 gap-6 bg-beige text-noir">       
+                <div class="col-span-12 lg:col-span-6 col-start-1 bg-lilas rounded-3xl ring-1 ring-noir">
+                    <div>
+                        <div class="bg-violet w-full h-9 rounded-t-2xl relative ring-1 ring-noir">
+                            <span class="w-[10px] h-[10px] bg-beige rounded-full absolute top-3 right-[46px] ring-1 ring-noir"></span>
+                            <span class="w-[10px] h-[10px] bg-beige rounded-full absolute top-3 right-[32px] ring-1 ring-noir"></span>
+                            <span class="w-[10px] h-[10px] bg-beige rounded-full absolute top-3 right-[18px] ring-1 ring-noir"></span>
+                          </div> 
+                          <p class="text-para font-para leading-para mx-20 mt-10 text-2xl font-bold">Martin, 35 ans, utilisateur d’agent conversationnelle</p>
+                  <p class="text-para font-para leading-para mx-20 mt-10 mb-20 text-lg">
+                    “Lorsque j'ai interagi avec cette IA, je m'attendais à une expérience mécanique, mais j'ai été frappé par la fluidité de la conversation.
+                    Les réponses étaient pertinentes, les transitions naturelles, et l'IA avait même un sens de l'humour. C'était comme parler à un ami de longue date. 
+                    <br><br>
+                    Cependant, cela m'a aussi fait réfléchir sur l'avenir. Si les IA deviennent indiscernables des humains dans leur communication, quelles implications sur la société ? Pourrait-on perdre la véritable communication humaine, l'empathie et le lien social ? 
+                    Cette expérience, bien que positive, suscite des préoccupations importantes.”
+                  </p>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-6 col-start-1 lg:col-start-7 bg-beige text-noir rounded-2xl ring-1 ring-noir">
+                  <div class="bg-violet w-full h-9 rounded-t-2xl relative ring-1 ring-noir">
+                    <span class="w-[10px] h-[10px] bg-beige rounded-full absolute top-3 right-[46px] ring-1 ring-noir"></span>
+                    <span class="w-[10px] h-[10px] bg-beige rounded-full absolute top-3 right-[32px] ring-1 ring-noir"></span>
+                    <span class="w-[10px] h-[10px] bg-beige rounded-full absolute top-3 right-[18px] ring-1 ring-noir"></span>
+                  </div>
+                  <p class="text-para font-para leading-para mx-20 mt-10 text-2xl font-bold">Arnaud, 32 ans, utilisateur de chatbots de santé mentale</p>
+                  <p class="text-para font-para leading-para mx-20 mt-10 mb20 text-lg">
+                    "J'ai utilisé des chatbots de santé mentale pour gérer mon anxiété. Ils m'ont offert des conseils utiles et des techniques de relaxation.
+                    Cependant, il y a eu des moments où j'avais besoin de quelqu'un pour parler de mes préoccupations profondes et de mes émotions complexes. 
+                    Les chatbots ne pouvaient pas vraiment comprendre la complexité de ma situation. J'ai finalement cherché l'aide d'un professionnel de la santé mentale humain, 
+                    ce qui a fait une énorme différence dans ma prise en charge de l'anxiété."
+                  </p>
+                </div>
+              </section> 
+              
+
+              <section class="w-full p-mobile lg:p-desktop grid grid-cols-12 gap-6 bg-beige text-noir">       
+                <div class="col-span-12 lg:col-span-4 col-start-1 bg-beige rounded-3xl ring-1 ring-noir">
+                    <div>
+                        <div class="bg-violet w-full h-9 rounded-t-2xl relative ring-1 ring-noir">
+                            <span class="w-[10px] h-[10px] bg-beige rounded-full absolute top-3 right-[46px] ring-1 ring-noir"></span>
+                            <span class="w-[10px] h-[10px] bg-beige rounded-full absolute top-3 right-[32px] ring-1 ring-noir"></span>
+                            <span class="w-[10px] h-[10px] bg-beige rounded-full absolute top-3 right-[18px] ring-1 ring-noir"></span>
+                          </div> 
+                          <p class="text-para font-para leading-para mx-20 mt-10 text-2xl font-bold">Leïla, 24 ans, utilisatrice de robots de compagnie</p>
+                  <p class="text-para font-para leading-para mx-20 mt-10 mb-20 text-lg">
+                    "J'ai acheté un robot de compagnie pour me tenir compagnie lorsque j'étais seule à la maison. Il était mignon et interactif,
+                    mais au fil du temps, j'ai réalisé qu'il n'avait pas de véritables émotions ni d'empathie. Il ne pouvait pas comprendre quand
+                    j'avais besoin de réconfort ou d'une véritable interaction humaine. J'ai finalement adopté un chien, ce qui a apporté une chaleur
+                    et une connexion authentique à ma vie que le robot ne pouvait pas offrir."
+                  </p>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-8 col-start-1 lg:col-start-5 bg-lilas text-noir rounded-2xl ring-1 ring-noir">
+                  <div class="bg-violet w-full h-9 rounded-t-2xl relative ring-1 ring-noir">
+                    <span class="w-[10px] h-[10px] bg-beige rounded-full absolute top-3 right-[46px] ring-1 ring-noir"></span>
+                    <span class="w-[10px] h-[10px] bg-beige rounded-full absolute top-3 right-[32px] ring-1 ring-noir"></span>
+                    <span class="w-[10px] h-[10px] bg-beige rounded-full absolute top-3 right-[18px] ring-1 ring-noir"></span>
+                  </div>
+                  <p class="text-para font-para leading-para mx-20 mt-10 text-2xl font-bold">Mark, 45 ans, utilisateur d'assistant vocal intelligent</p>
+                  <p class="text-para font-para leading-para mx-20 mt-10 mb20 text-lg">
+                    "Mon travail est très stressant, et j'ai commencé à utiliser un assistant vocal intelligent pour m'aider à gérer mes tâches quotidiennes et
+                    à me rappeler mes rendez-vous. C'était incroyablement pratique et m'a permis de gagner beaucoup de temps. Je me suis habitué à discuter avec lui comme s'il s'agissait d'un véritable assistant.
+                    <br><br><br>
+                    Cependant, j'ai réalisé que je devenais de plus en plus déconnecté de mes collègues et de ma famille en raison de ma dépendance à la technologie.
+                    J'ai décidé de réduire mon utilisation de l'assistant vocal et de passer plus de temps à interagir en personne avec les gens, ce qui a amélioré ma vie sociale et mon bien-être."
+                  </p>
+                </div>
+              </section>
+
+              <section class="w-full p-mobile lg:p-desktop grid grid-cols-12 gap-6 bg-beige text-noir">
+                <div class="col-span-12 block w-fit mx-auto text-noir">
+                  <a href="" class="text-link font-link inline-block ml-4 my-2 underline">Voir davantages de témoignagnes</a>
+                  <i class="fa-solid fa-angle-down inline-block text-noir mx-1 my-2"></i>
+                </div>
+              </section>
+
+
+              <section class="w-full p-mobile lg:p-desktop grid grid-cols-12 gap-6 bg-violet">
+                  <h2
+                  class="text-h2mobile lg:text-h2desktop font-h2 leading-h2 w-fit h-fit col-span-12 bg-beige text-violet px-10 pb-2 pt-3 rounded-lg ring-1 ring-noir">
+                  Exprimez-vous !
+                </h2>
+                <p class="col-span-9 col-start-1 mt-10">En faisant part de votre expérience, vous contribuerez à sensibiliser les autres. 
+                  Nous vous encourageons donc à nous envoyer votre témoignage. N'hésitez pas à partager tout ce qui a eu une importance particulière pour vous.</p>
+              </section>
+
+
+              <section  class="w-full hidden p-mobile lg:p-desktop lg:grid grid-cols-12 gap-6 bg-violet text-noir">
+                <form class="grid grid-cols-12 grid-rows-6 gap-6 col-span-12 sm:col-span-10 col-start-1 sm:col-start-2">
+                  <div class="col-span-4 row-span-2">
+                    <label for="" class="block bg-noir rounded-3xl py-2 px-7 h-[80px] text-beige w-fit">Civilité*</label>
+                    <div class="block w-3/5 rounded-3xl h-[calc(100%-80px)]  transform translate-y-[-40px] px-4 bg-beige ">
+                      <div class="grid grid-rows-3 w-fit h-full py-4 m-auto items-center">
+                        <label for="option1" class="w-fit row-start-1">
+                        <input type="radio" id="option1" name="options" value="Monsieur" class="w-6 h-6"> Monsieur
+                      </label>
+                      <label for="option2" class="w-fit row-start-2">
+                        <input type="radio" id="option2" name="options" value="Madame" class="w-6 h-6"> Madame
+                      </label>
+                      <label for="option3" class="w-fit row-start-3">
+                        <input type="radio" id="option3" name="options" value="Ne pas préciser" class="w-6 h-6"> Ne pas préciser
+                      </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-span-4 col-start-5 ">
+                    <label for="" class="block bg-noir rounded-3xl py-2 px-7 h-[80px] text-beige w-fit">Prénom*</label>
+                    <input type="text" class="block w-full rounded-3xl h-10 transform translate-y-[-40px] px-4">
+                  </div>
+                  <div class="col-span-4 col-start-5 row-start-2 ">
+                    <label for="" class="block bg-noir rounded-3xl py-2 px-7 h-[80px] text-beige w-fit">Adresse email*</label>
+                    <input type="text" class="block w-full rounded-3xl h-10 transform translate-y-[-40px] px-4">
+                  </div>
+                  <div class="col-span-8 row-span-3 col-start-5 row-start-3 ">
+                    <label for="" class="block bg-noir rounded-3xl py-2 px-7 h-[80px] text-beige w-fit">Saisir votre témoignage*</label>
+                    <textarea class="block w-full h-[calc(100%-80px)] rounded-3xl  transform translate-y-[-40px] py-4 px-4 resize-none"></textarea>
+                  </div>
+                  <div class="col-span-4 col-start-9 row-start-2">
+                    <label for="" class="block bg-noir rounded-3xl py-2 px-7 h-[80px] text-beige w-fit">Titre de votre témoignage*</label>
+                    <input type="text" class="block w-full rounded-3xl h-10 transform translate-y-[-40px] px-4">
+                  </div>
+                  <div class="col-span-8 col-start-5 row-start-6 relative">
+                    <p class="text-beige text-para font-para leading-para">* Champs obligatoire</p>
+                    <a href="formTemoignage" class="text-link font-link block w-fit absolute top-0 right-0">
+                      <span
+                        class="w-fit py-3 px-7 bg-beige text-noir font-bold rounded-full ring-noir ring-1 shadow-btn transform hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none">
+                        Publier mon témoignage
+                      </span>
+                    </a>
+                  </div>
+                  <div class="col-span-4 col-start-9 row-start-1 ">
+                    <label for="" class="block bg-noir rounded-3xl py-2 px-7 h-[80px] text-beige w-fit">Age*</label>
+                    <input type="text" class="block w-full rounded-3xl h-10 transform translate-y-[-40px] px-4">
+                  </div>
+                </form>
+              </section>
+
+              <section  class="w-full p-mobile lg:hidden lg:p-desktop grid grid-cols-12 gap-6 bg-violet text-noir">
+                <form class="grid grid-cols-12 grid-rows-12 gap-6 col-span-12 sm:col-span-10 col-start-1 sm:col-start-2">
+                  <div class="row-start-1 col-span-12 row-span-2">
+                    <label for="" class="block bg-noir rounded-3xl py-2 px-7 h-[80px] text-beige w-fit">Civilité*</label>
+                    <div class="block w-3/5 rounded-3xl h-[calc(100%-80px)]  transform translate-y-[-40px] px-4 bg-beige ">
+                      <div class="grid grid-rows-3 w-fit h-full py-4 m-auto items-center">
+                        <label for="option1" class="w-fit row-start-1">
+                        <input type="radio" id="option1" name="options" value="Monsieur" class="w-6 h-6"> Monsieur
+                      </label>
+                      <label for="option2" class="w-fit row-start-2">
+                        <input type="radio" id="option2" name="options" value="Madame" class="w-6 h-6"> Madame
+                      </label>
+                      <label for="option3" class="w-fit row-start-3">
+                        <input type="radio" id="option3" name="options" value="Ne pas préciser" class="w-6 h-6"> Ne pas préciser
+                      </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row-start-3 row-span-1 col-span-12">
+                    <label for="" class="block bg-noir rounded-3xl py-2 px-7 h-[80px] text-beige w-fit">Prénom*</label>
+                    <input type="text" class="block w-full rounded-3xl h-10 transform translate-y-[-40px] px-4">
+                  </div>
+                  <div class="row-start-4 row-span-1 col-span-12 ">
+                    <label for="" class="block bg-noir rounded-3xl py-2 px-7 h-[80px] text-beige w-fit">Age*</label>
+                    <input type="text" class="block w-full rounded-3xl h-10 transform translate-y-[-40px] px-4">
+                  </div>
+                  
+                  <div class="row-start-5 row-span-1 col-span-12 ">
+                    <label for="" class="block bg-noir rounded-3xl py-2 px-7 h-[80px] text-beige w-fit">Adresse email*</label>
+                    <input type="text" class="block w-full rounded-3xl h-10 transform translate-y-[-40px] px-4">
+                  </div>
+                  <div class="row-start-6 row-span-1 col-span-12">
+                    <label for="" class="block bg-noir rounded-3xl py-2 px-7 h-[80px] text-beige w-fit">Titre de votre témoignage*</label>
+                    <input type="text" class="block w-full rounded-3xl h-10 transform translate-y-[-40px] px-4">
+                  </div>
+                  <div class="row-start-7 row-span-3 col-span-12">
+                    <label for="" class="block bg-noir rounded-3xl py-2 px-7 h-[80px] text-beige w-fit">Saisir votre témoignage*</label>
+                    <textarea class="block w-full h-[calc(100%-80px)] rounded-3xl  transform translate-y-[-40px] py-4 px-4 resize-none"></textarea>
+                  </div>
+                  <div class="row-start-10 row-span-1 col-span-12">
+                    <p class="text-beige text-para font-para leading-para">* Champs obligatoire</p>
+                  </div>
+                  <div class="row-start-11 row-span-1 col-span-12">
+                    <a href="formTemoignage" class="text-link font-link block w-fit">
+                      <span
+                        class="w-fit py-3 px-7 bg-beige text-noir font-bold rounded-full ring-noir ring-1 shadow-btn transform hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none">
+                        Publier mon témoignage
+                      </span>
+                    </a>
+                  </div>
+                </form>
+              </section>
+
+
+              <footer class="w-full h-fit bg-noir grid grid-cols-12 gap-6 text-beige p-mobile lg:p-desktop">
+                <img src="../medias/img/logo_white.svg" alt="logo blanc Relation promptée" class="col-span-6 sm:col-span-3" />
+                <div class="col-span-12 lg:col-span-2 col-start-1 lg:col-start-1 sm:col-span-6 sm:col-start-1">
+                  <p class="font-para leading-para font-bold text-2xl my-3">Pages</p>
+                  <ul>
+                    <li class="py-3"><a href="/relation-promptee/" class="text-link font-link">Accueil</a></li>
+                    <li class="py-3"><a href="blog.html" class="text-link font-link">Blog</a></li>
+                    <li class="py-3"><a href="temoignages.html" class="text-link font-link">Témoignages</a></li>
+                    <li class="py-3"><a href="nous-contacter.html" class="text-link font-link">Nous contacter</a></li>
+                  </ul>
+                </div>
+                <div class="col-span-12 lg:col-span-2 col-start-1 lg:col-start-3 sm:col-span-6 sm:col-start-7">
+                  <p class="font-para leading-para font-bold text-2xl my-3">Légal</p>
+                  <ul>
+                    <li class="py-3"><a href="" class="text-link font-link">Mentions légales</a></li>
+                    <li class="py-3"><a href="" class="text-link font-link">Politique de confidentialité</a></li>
+                    <li class="py-3"><a href="" class="text-link font-link">Accessibilité</a></li>
+                  </ul>
+                </div>
+                <div class="col-span-12 lg:col-span-2 col-start-1 lg:col-start-5 sm:col-span-6 sm:col-start-1">
+                  <p class="font-para leading-para font-bold text-2xl my-3">Nous contacter</p>
+                  <ul>
+                    <li class="py-3"><a href="tel:0805776677" class="text-link font-link text-2xl">0805 776 677</a></li>
+                    <li class="py-3"><a href="" class="text-link font-link">8 bis Rue de la Fontaine au Roi, 75011 Paris</a></li>
+                    <li class="py-3"></li>
+                  </ul>
+                </div>
+                <div class="col-span-12 lg:col-span-4 col-start-1 lg:col-start-8 sm:col-span-6 sm:col-start-7">
+                  <p class="font-para leading-para font-bold text-2xl my-3">Inscrivez vous à notre Newsletter !</p>
+                  <form action="#" method="POST" id="formNewsletter" class="relative w-full">
+                    <input type="text" class="w-full my-3 py-3 px-6 rounded-full text-noir" placeholder="Entrez votre e-mail" />
+                    <a onclick="document.getElementById('formNewsletter').submit();" class="absolute top-3 right-4 p-[10px] cursor-pointer">
+                      <i class="fa-solid fa-angle-right text-noir"></i>
+                    </a>
+                  </form>
+                  <ul class="w-full grid grid-cols-5 my-3">
+                    <li class="w-11 h-11 p-2 bg-beige rounded-full justify-self-center">
+                      <a href=""><i class="fa-brands fa-instagram text-3xl text-noir"></i></a>
+                    </li>
+                    <li class="w-11 h-11 p-2 bg-beige rounded-full justify-self-center">
+                      <a href=""><i class="fa-brands fa-linkedin text-3xl text-noir"></i></a>
+                    </li>
+                    <li class="w-11 h-11 p-2 bg-beige rounded-full justify-self-center">
+                      <a href=""><i class="fa-brands fa-facebook text-3xl text-noir"></i></a>
+                    </li>
+                    <li class="w-11 h-11 p-2 bg-beige rounded-full justify-self-center">
+                      <a href=""><i class="fa-brands fa-x-twitter text-3xl text-noir"></i></a>
+                    </li>
+                    <li class="w-11 h-11 p-2 bg-beige rounded-full justify-self-center">
+                      <a href=""><i class="fa-brands fa-spotify text-3xl text-noir"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </footer>
+        </main>
+        <script src="../js/scripts.js"></script>
+</body>
+</html>
