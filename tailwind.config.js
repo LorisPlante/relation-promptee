@@ -27,12 +27,14 @@ module.exports = {
         h2mobile: "35px",
         h3desktop: "28px",
         h3mobile: "24px",
+        h4: "24px",
         para: "18px",
         link: "18px",
       },
       fontFamily: {
         h2: "roc-grotesk, sans-serif",
         h3: "roc-grotesk, sans-serif",
+        h4: "Space Grotesk, sans-serif",
         para: "Space Grotesk, sans-serif",
         link: "Space Grotesk, sans-serif",
         "roc-grotesk-heavy": ["roc-grotesk", "sans-serif"],
@@ -40,6 +42,7 @@ module.exports = {
       fontWeight: {
         h2: "700",
         h3: "700",
+        h4: "700",
       },
       lineHeight: {
         h2: "1",
