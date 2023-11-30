@@ -658,10 +658,6 @@ video {
 .aspect-video {
   aspect-ratio: 16 / 9;
 }
-.\!h-max {
-  height: -moz-max-content !important;
-  height: max-content !important;
-}
 .h-11 {
   height: 2.75rem;
 }
@@ -1181,10 +1177,6 @@ video {
 
   .xl\:col-start-9 {
     grid-column-start: 9;
-  }
-
-  .xl\:\!hidden {
-    display: none !important;
   }
 }
 @media (min-width: 1536px) {

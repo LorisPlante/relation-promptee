@@ -22,9 +22,6 @@ module.exports = {
         btn: "2px 2px 0px 2px #080808",
         btn2: "2px 2px 0px 2px #6652DF",
       },
-      translate: {
-        btn: "3px",
-      },
       fontSize: {
         h2desktop: "50px",
         h2mobile: "35px",

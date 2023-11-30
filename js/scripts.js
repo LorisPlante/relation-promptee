@@ -3,6 +3,20 @@ let prevScrollPos = window.scrollY || document.documentElement.scrollTop;
 const parent = document.getElementById("parent");
 const follower = document.getElementById("follower");
 
+// ---------- swiper slide height ----------
+
+document.addEventListener("DOMContentLoaded", () => {
+  var zoomSurSlide1 = document.getElementById("zoomSurSlide1");
+  var zoomSurSlide2 = document.getElementById("zoomSurSlide2");
+  var zoomSurSlide3 = document.getElementById("zoomSurSlide3");
+
+  var maxHeight = Math.max(zoomSurSlide1.clientHeight, zoomSurSlide2.clientHeight, zoomSurSlide3.clientHeight);
+
+  zoomSurSlide1.style.height = maxHeight + "px";
+  zoomSurSlide2.style.height = maxHeight + "px";
+  zoomSurSlide3.style.height = maxHeight + "px";
+});
+
 // ---------- scroll down header desktop ----------
 
 window.onscroll = function () {
@@ -43,31 +57,15 @@ burgerClose.addEventListener("click", () => {
   burgerClose.classList.toggle("block");
 });
 
-// ---------- swiper slide height ----------
-
-document.addEventListener("DOMContentLoaded", function () {
-  var zommSurSlide1 = document.getElementById("zommSurSlide1");
-  var zommSurSlide2 = document.getElementById("zommSurSlide2");
-  var zommSurSlide3 = document.getElementById("zommSurSlide3");
-
-  // Trouvez la hauteur maximale
-  var maxHeight = Math.max(zommSurSlide1.clientHeight, zommSurSlide2.clientHeight, zommSurSlide3.clientHeight);
-
-  // Appliquez la hauteur maximale à toutes les divs
-  zommSurSlide1.style.height = maxHeight + "px";
-  zommSurSlide2.style.height = maxHeight + "px";
-  zommSurSlide3.style.height = maxHeight + "px";
-});
-
 // ---------- eyes follows mouse ----------
 
-document.addEventListener("mousemove", (e) => {
-  const rect = parent.getBoundingClientRect();
-  const offsetX = e.clientX - rect.left;
-  const offsetY = e.clientY - rect.top;
+// document.addEventListener("mousemove", (e) => {
+//   const rect = parent.getBoundingClientRect();
+//   const offsetX = e.clientX - rect.left;
+//   const offsetY = e.clientY - rect.top;
 
-  const clampedX = Math.min(Math.max(offsetX - follower.clientWidth / 2, 0), rect.width - follower.clientWidth);
-  const clampedY = Math.min(Math.max(offsetY - follower.clientHeight / 2, 0), rect.height - follower.clientHeight);
+//   const clampedX = Math.min(Math.max(offsetX - follower.clientWidth / 2, 0), rect.width - follower.clientWidth);
+//   const clampedY = Math.min(Math.max(offsetY - follower.clientHeight / 2, 0), rect.height - follower.clientHeight);
 
-  follower.style.transform = `translate(${clampedX}px, ${clampedY}px)`;
-});
+//   follower.style.transform = `translate(${clampedX}px, ${clampedY}px)`;
+// });
