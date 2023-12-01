@@ -191,6 +191,33 @@ function recommencerQuizz() {
   document.getElementById("qstBtnRecommencer").classList.toggle("hidden");
 }
 
+// ---------- que'st ce qu'une ia ----------
+
+function ia1() {
+  document.getElementById("contentIA1").classList.add("block");
+  document.getElementById("contentIA1").classList.remove("hidden");
+  document.getElementById("contentIA2").classList.add("hidden");
+  document.getElementById("contentIA2").classList.remove("block");
+  document.getElementById("contentIA3").classList.add("hidden");
+  document.getElementById("contentIA3").classList.remove("block");
+}
+function ia2() {
+  document.getElementById("contentIA1").classList.add("hidden");
+  document.getElementById("contentIA1").classList.remove("block");
+  document.getElementById("contentIA2").classList.add("block");
+  document.getElementById("contentIA2").classList.remove("hidden");
+  document.getElementById("contentIA3").classList.add("hidden");
+  document.getElementById("contentIA3").classList.remove("block");
+}
+function ia3() {
+  document.getElementById("contentIA1").classList.add("hidden");
+  document.getElementById("contentIA1").classList.remove("block");
+  document.getElementById("contentIA2").classList.add("hidden");
+  document.getElementById("contentIA2").classList.remove("block");
+  document.getElementById("contentIA3").classList.add("block");
+  document.getElementById("contentIA3").classList.remove("hidden");
+}
+
 // ---------- eyes follows mouse ----------
 
 // document.addEventListener("mousemove", (e) => {
