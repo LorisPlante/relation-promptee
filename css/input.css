@@ -1,20 +1,4 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 @import url("https://use.typekit.net/pvi0sbw.css");
-/* #chatBox::-webkit-scrollbar {
-  width: 8px;
-}
-#chatBox::-webkit-scrollbar-thumb {
-  background-color: #ffc634;
-  border-radius: 9999px;
-}
-#chatBox::-webkit-scrollbar-thumb:hover {
-  background-color: #ffc634;
-  border-radius: 9999px;
-}
-#chatBox::-webkit-scrollbar-track {
-  background-color: #e8e8e8;
-  border-radius: 9999px;
-} */
