@@ -1,21 +1,7 @@
 let prevScrollPos = window.scrollY || document.documentElement.scrollTop;
 
-const parent = document.getElementById("parent");
-const follower = document.getElementById("follower");
-
-// ---------- swiper slide height ----------
-
-document.addEventListener("DOMContentLoaded", () => {
-  var zoomSurSlide1 = document.getElementById("zoomSurSlide1");
-  var zoomSurSlide2 = document.getElementById("zoomSurSlide2");
-  var zoomSurSlide3 = document.getElementById("zoomSurSlide3");
-
-  var maxHeight = Math.max(zoomSurSlide1.clientHeight, zoomSurSlide2.clientHeight, zoomSurSlide3.clientHeight);
-
-  zoomSurSlide1.style.height = maxHeight + "px";
-  zoomSurSlide2.style.height = maxHeight + "px";
-  zoomSurSlide3.style.height = maxHeight + "px";
-});
+// const parent = document.getElementById("parent");
+// const follower = document.getElementById("follower");
 
 // ---------- scroll down header desktop ----------
 
@@ -56,6 +42,154 @@ burgerClose.addEventListener("click", () => {
   burgerClose.classList.toggle("hidden");
   burgerClose.classList.toggle("block");
 });
+
+// ---------------------------
+// ---------- Quizz ----------
+// ---------------------------
+
+// ---------- qst1 ----------
+function qstChoix1RepVrai() {
+  document.getElementById("qstChoix1").classList.toggle("grid");
+  document.getElementById("qstChoix1").classList.toggle("hidden");
+  document.getElementById("qstChoix1Vrai").classList.toggle("grid");
+  document.getElementById("qstChoix1Vrai").classList.toggle("hidden");
+  document.getElementById("qstBtn1").classList.toggle("block");
+  document.getElementById("qstBtn1").classList.toggle("hidden");
+}
+function qstChoix1RepFaux() {
+  document.getElementById("qstChoix1").classList.toggle("grid");
+  document.getElementById("qstChoix1").classList.toggle("hidden");
+  document.getElementById("qstChoix1Faux").classList.toggle("grid");
+  document.getElementById("qstChoix1Faux").classList.toggle("hidden");
+  document.getElementById("qstBtn1").classList.toggle("block");
+  document.getElementById("qstBtn1").classList.toggle("hidden");
+}
+function goToQst2() {
+  document.getElementById("qstChoix2").classList.toggle("grid");
+  document.getElementById("qstChoix2").classList.toggle("hidden");
+  document.getElementById("qstChoix1Vrai").classList.remove("grid");
+  document.getElementById("qstChoix1Faux").classList.remove("grid");
+  document.getElementById("qstChoix1Vrai").classList.add("hidden");
+  document.getElementById("qstChoix1Faux").classList.add("hidden");
+  document.getElementById("qstBtn1").classList.toggle("block");
+  document.getElementById("qstBtn1").classList.toggle("hidden");
+  document.getElementById("qst1").classList.toggle("block");
+  document.getElementById("qst1").classList.toggle("hidden");
+  document.getElementById("qst2").classList.toggle("block");
+  document.getElementById("qst2").classList.toggle("hidden");
+}
+
+// ---------- qst2 ----------
+function qstChoix2RepVrai() {
+  document.getElementById("qstChoix2").classList.toggle("grid");
+  document.getElementById("qstChoix2").classList.toggle("hidden");
+  document.getElementById("qstChoix2Vrai").classList.toggle("grid");
+  document.getElementById("qstChoix2Vrai").classList.toggle("hidden");
+  document.getElementById("qstBtn2").classList.toggle("block");
+  document.getElementById("qstBtn2").classList.toggle("hidden");
+}
+function qstChoix2RepFaux() {
+  document.getElementById("qstChoix2").classList.toggle("grid");
+  document.getElementById("qstChoix2").classList.toggle("hidden");
+  document.getElementById("qstChoix2Faux").classList.toggle("grid");
+  document.getElementById("qstChoix2Faux").classList.toggle("hidden");
+  document.getElementById("qstBtn2").classList.toggle("block");
+  document.getElementById("qstBtn2").classList.toggle("hidden");
+}
+function backToQst1() {
+  document.getElementById("qstChoix1").classList.toggle("grid");
+  document.getElementById("qstChoix1").classList.toggle("hidden");
+  document.getElementById("qstChoix2Vrai").classList.remove("grid");
+  document.getElementById("qstChoix2Vrai").classList.add("hidden");
+  document.getElementById("qstChoix2Faux").classList.remove("grid");
+  document.getElementById("qstChoix2Faux").classList.add("hidden");
+  document.getElementById("qstBtn2").classList.toggle("block");
+  document.getElementById("qstBtn2").classList.toggle("hidden");
+  document.getElementById("qst1").classList.toggle("block");
+  document.getElementById("qst1").classList.toggle("hidden");
+  document.getElementById("qst2").classList.toggle("block");
+  document.getElementById("qst2").classList.toggle("hidden");
+}
+function goToQst3() {
+  document.getElementById("qstChoix3").classList.toggle("grid");
+  document.getElementById("qstChoix3").classList.toggle("hidden");
+  document.getElementById("qstChoix2Vrai").classList.remove("grid");
+  document.getElementById("qstChoix2Vrai").classList.add("hidden");
+  document.getElementById("qstChoix2Faux").classList.remove("grid");
+  document.getElementById("qstChoix2Faux").classList.add("hidden");
+  document.getElementById("qstBtn2").classList.toggle("block");
+  document.getElementById("qstBtn2").classList.toggle("hidden");
+  document.getElementById("qst2").classList.toggle("block");
+  document.getElementById("qst2").classList.toggle("hidden");
+  document.getElementById("qst3").classList.toggle("block");
+  document.getElementById("qst3").classList.toggle("hidden");
+}
+
+// ---------- qst3 ----------
+function qstChoix3RepVrai() {
+  document.getElementById("qstChoix3").classList.toggle("grid");
+  document.getElementById("qstChoix3").classList.toggle("hidden");
+  document.getElementById("qstChoix3Vrai").classList.toggle("grid");
+  document.getElementById("qstChoix3Vrai").classList.toggle("hidden");
+  document.getElementById("qstBtn3").classList.toggle("block");
+  document.getElementById("qstBtn3").classList.toggle("hidden");
+}
+function qstChoix3RepFaux() {
+  document.getElementById("qstChoix3").classList.toggle("grid");
+  document.getElementById("qstChoix3").classList.toggle("hidden");
+  document.getElementById("qstChoix3Faux").classList.toggle("grid");
+  document.getElementById("qstChoix3Faux").classList.toggle("hidden");
+  document.getElementById("qstBtn3").classList.toggle("block");
+  document.getElementById("qstBtn3").classList.toggle("hidden");
+}
+function backToQst2() {
+  document.getElementById("qstChoix2").classList.toggle("grid");
+  document.getElementById("qstChoix2").classList.toggle("hidden");
+  document.getElementById("qstChoix3Vrai").classList.remove("grid");
+  document.getElementById("qstChoix3Vrai").classList.add("hidden");
+  document.getElementById("qstChoix3Faux").classList.remove("grid");
+  document.getElementById("qstChoix3Faux").classList.add("hidden");
+  document.getElementById("qst2").classList.toggle("block");
+  document.getElementById("qst2").classList.toggle("hidden");
+  document.getElementById("qst3").classList.toggle("block");
+  document.getElementById("qst3").classList.toggle("hidden");
+  document.getElementById("qstBtn3").classList.toggle("block");
+  document.getElementById("qstBtn3").classList.toggle("hidden");
+}
+function goToRecap() {
+  document.getElementById("qstChoixRecap").classList.toggle("grid");
+  document.getElementById("qstChoixRecap").classList.toggle("hidden");
+  document.getElementById("qstChoix3Vrai").classList.remove("grid");
+  document.getElementById("qstChoix3Vrai").classList.add("hidden");
+  document.getElementById("qstChoix3Faux").classList.remove("grid");
+  document.getElementById("qstChoix3Faux").classList.add("hidden");
+  document.getElementById("qstBtn3").classList.toggle("block");
+  document.getElementById("qstBtn3").classList.toggle("hidden");
+  document.getElementById("qst3").classList.toggle("block");
+  document.getElementById("qst3").classList.toggle("hidden");
+  document.getElementById("qstRecap").classList.toggle("block");
+  document.getElementById("qstRecap").classList.toggle("hidden");
+  document.getElementById("qstBtnRecommencer").classList.toggle("block");
+  document.getElementById("qstBtnRecommencer").classList.toggle("hidden");
+}
+
+// ---------- recap ----------
+function recommencerQuizz() {
+  document.getElementById("qstChoix1").classList.toggle("grid");
+  document.getElementById("qstChoix1").classList.toggle("hidden");
+  document.getElementById("qstChoixRecap").classList.toggle("grid");
+  document.getElementById("qstChoixRecap").classList.toggle("hidden");
+  document.getElementById("qstChoix3Vrai").classList.remove("grid");
+  document.getElementById("qstChoix3Vrai").classList.add("hidden");
+  document.getElementById("qstChoix3Faux").classList.remove("grid");
+  document.getElementById("qstChoix3Faux").classList.add("hidden");
+  document.getElementById("qstRecap").classList.toggle("block");
+  document.getElementById("qstRecap").classList.toggle("hidden");
+  document.getElementById("qst1").classList.toggle("block");
+  document.getElementById("qst1").classList.toggle("hidden");
+  document.getElementById("qstBtnRecommencer").classList.toggle("block");
+  document.getElementById("qstBtnRecommencer").classList.toggle("hidden");
+}
 
 // ---------- eyes follows mouse ----------
 
