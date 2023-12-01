@@ -512,8 +512,8 @@ video {
 .left-6 {
   left: 1.5rem;
 }
-.left-\[2vw\] {
-  left: 2vw;
+.left-\[1vw\] {
+  left: 1vw;
 }
 .right-0 {
   right: 0px;
@@ -551,8 +551,8 @@ video {
 .top-\[-100\%\] {
   top: -100%;
 }
-.top-\[14vw\] {
-  top: 14vw;
+.top-\[11vw\] {
+  top: 11vw;
 }
 .top-\[50px\] {
   top: 50px;
